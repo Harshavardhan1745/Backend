@@ -1,5 +1,18 @@
-function area(l,b){
-   console.log(l*b);
+function bankacc(){
    
+   let balance = 5000
+
+   function checkbalance(){ 
+      console.log("account balance :",balance);
+      
+   }
+
+   return checkbalance
+
 }
-area(20,20)
+const account = bankacc()
+
+account()
+
+ 
+ 
