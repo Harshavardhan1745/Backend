@@ -1,18 +1,16 @@
-function bankacc(){
+// function bankacc(){
    
-   let balance = 5000
+//    let balance = 5000
 
-   function checkbalance(){ 
-      console.log("account balance :",balance);
+//    function checkbalance(){ 
+//       console.log("account balance :",balance);
       
-   }
+//    }
 
-   return checkbalance
+//    return checkbalance
 
-}
-const account = bankacc()
+// }
+// const account = bankacc()
 
-account()
+// account()
 
- 
- 
