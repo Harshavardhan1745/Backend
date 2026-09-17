@@ -25,3 +25,6 @@ console.log(skill[skill.length-1]);
 
 
 
+
+
+
