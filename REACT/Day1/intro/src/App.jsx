@@ -14,7 +14,7 @@ const App = () => {
           <p>The framework  will decide everything what have to  do in framework there will be some set of rules </p>
          </div>
          <div className="text-4xl mx-10">
-          <FontAwesomeIcon icon={faHeart } className="text-pink-400 text-bold animate-pulse" />  
+          <FontAwesomeIcon icon={ faHeart } className="text-pink-400 text-bold animate-pulse" />  
          </div>
         </div>
       </div>
