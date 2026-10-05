@@ -25,15 +25,39 @@
 //     console.log(row);
 // }
 
-let arr = [1,2,3,4,5,6,7,8]
-
-for (let i= arr.length; i>=0 ; i--){
-    console.log(arr[i]);
+// function cal(product , qtn){
+//     console.log(product*qtn);
     
-}
+// }
+// cal(200,5)
 
-for(let x in arr){
-    console.log(x);
-    
-}
 
+// function check(age){
+//     if(age >= 18){
+//         console.log("Eligible");
+        
+//     }else{
+//         console.log("not eligible");
+        
+//     }
+// }
+// check(12)
+
+
+// function counts(){
+//     let count = 0 
+//     function innerfun (){
+//         count ++
+//         console.log(count);
+        
+//     }
+//         return innerfun
+// }
+// out = counts()
+//  out()
+//  out()
+
+function account(){
+   
+
+}
