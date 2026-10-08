@@ -57,7 +57,27 @@
 //  out()
 //  out()
 
-function account(){
+// function account(){
    
 
+// }
+
+
+let arr = [10,15,25,20]
+let lar = arr[0]
+let sec = arr[0]
+
+for(let i = 0 ; i<arr.length ; i++ ){
+    if(arr[i]< lar){
+        sec = lar
+        lar = arr[i] 
 }
+
+    if(arr[i]>sec && arr[i]<lar){
+        sec = arr[i]
+    }
+}
+
+console.log(lar);
+console.log(sec);
+
