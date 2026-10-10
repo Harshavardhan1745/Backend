@@ -5,7 +5,7 @@ const Arrayrendering = () => {
     const [arr,setArr] = useState(["HTML", "CSS", "JavaScript"])
 
     const clicktochange = () =>{
-        setArr((prev)=>([...prev,"React"]))
+        setArr((prev)=>([...prev,"js"]))
     }
   return (
     <>
