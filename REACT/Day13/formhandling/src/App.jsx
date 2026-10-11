@@ -1,5 +1,9 @@
 // import { useState } from "react";
 
+import Arrayofobject from "./components/Arrayofobject"
+import Objectrender from "./components/Objectrender"
+import Toggle from "./components/Toggle"
+
 
 // const App = () => {
 
@@ -41,8 +45,9 @@
 const App = () => {
   return (
     <>
-    
-    
+    <Toggle/>
+    <Objectrender/>
+    <Arrayofobject/>
     </>
   )
 }
