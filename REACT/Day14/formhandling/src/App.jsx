@@ -1,4 +1,5 @@
 import Courselist from "./components/Courselist"
+import Numberlist from "./components/Numberlist"
 import Studentslist from "./components/Studentslist"
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <>
     <Studentslist/>
     <Courselist/>
+    <Numberlist/>
     </>
   )
 }
