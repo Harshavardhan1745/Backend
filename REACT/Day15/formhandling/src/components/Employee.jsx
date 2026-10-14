@@ -26,6 +26,12 @@ const Employee = () => {
         })
     }
 
+    const handletodelete = (deletedata) => {
+        const copy = [...empsave]
+        const deletedatas = copy.filter((e,i)=>i!== deletedata)
+        setEmpsave(deletedatas)
+    }
+
     return (
     <>
     <div className="bg-red-500 h-screen text-white p-5 flex flex-col gap-10 justify-center items-center">
@@ -35,7 +41,7 @@ const Employee = () => {
             <input type="text" value={emp.empdepart} name="empdepart" placeholder="Enter your department" onChange={handlechange} className="bg-gray-50 text-black py-2 rounded-xl shadow-2xl outline-none px-4 w-60"/>
             <input type="text" value={emp.empsalary} name="empsalary" placeholder="Enter your salary" onChange={handlechange} className="bg-gray-50 text-black py-2 rounded-xl shadow-2xl outline-none px-4 w-60"/>
         </form>
-        <button onClick={handletoadd} className="bg-black py-2 px-4 w-40 rounded-xl">Add Employee</button>
+        <button onClick={handletoadd} className="bg-black py-2 px-4 w-40 rounded-xl mb-8">Add Employee</button>
         </div>
         <h2 className="text-3xl font-black mt-6">Employee List</h2>
         <div className="bg-black/20 p-4 rounded-xl shadow-2xl overflow-x-auto">
@@ -55,8 +61,8 @@ const Employee = () => {
                         <td className="px-4 py-3 text-left">{e.empdepart}</td>
                         <td className="px-4 py-3 text-left">{e.empsalary}</td>
                         <td className="px-4 py-3 text-left flex gap-3">
-                            <button className="bg-black py-2 px-4 w-25 rounded-xl" onClick={()=>handleEdit(empedit)}>Edit</button>
-                            <button className="bg-black py-2 px-4 w-25 rounded-xl">Delete</button>
+                            <button className="bg-black py-2 px-4 w-25 rounded-xl" onClick={()=>handleEdit(e)}>Edit</button>
+                            <button className="bg-black py-2 px-4 w-25 rounded-xl" onClick={()=>handletodelete(i)}>Delete</button>
                         </td>
                     </tr>
                 ))}
